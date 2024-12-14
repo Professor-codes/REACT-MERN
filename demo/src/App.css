@@ -1,0 +1,41 @@
+body {
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 39, 39);
+}
+
+.container {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid rgb(139, 93, 255);
+  background-color: rgba(139, 93, 255, 0.1);
+}
+
+nav {
+  padding-top: 0.5rem;
+  position: relative;
+  left: 3rem;
+}
+
+ul {
+  gap: 5rem;
+}
+
+.explore {
+  padding-top: 0.5rem;
+}
+
+.explore button{
+  margin-left: 1rem;
+}
+
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1520px;
+  }
+}
