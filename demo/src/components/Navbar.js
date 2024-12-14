@@ -1,4 +1,5 @@
 import React from 'react'
+// import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
     return (
@@ -29,3 +30,17 @@ export default function Navbar(props) {
         </div>
     )
 }
+
+// Deprecated!
+
+// Navbar.propTypes = {
+//     title: PropTypes.string,
+//     one: PropTypes.string,
+//     two: PropTypes.string,
+//     three: PropTypes.string,
+//     four: PropTypes.string
+// }
+
+// Navbar.defaultProps = {
+//     title: 'Logo',
+// }
