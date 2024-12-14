@@ -23,8 +23,8 @@ export default function Navbar(props) {
                     </ul>
                 </nav>
                 <div className='explore'>
-                    <button>Book a demo</button>
-                    <button>Sign in</button>
+                    <button className='nav-btn'>Get an app</button>
+                    <button className='nav-btn'>Sign in</button>
                 </div>
             </header>
         </div>

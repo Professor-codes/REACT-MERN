@@ -1,10 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
 }
+
+:root {
+  --border-color: rgb(255, 96, 0);
+  --bg-color: rgb(255, 96, 0, 0.1);
+  --text-color: rgb(160, 158, 158);
+  --bg-hover-color: rgb(255, 96, 0, 0.4);
+}
+
 body {
   color: rgb(255, 255, 255);
   background-color: rgb(39, 39, 39);
@@ -13,8 +21,6 @@ body {
 .container {
   padding: 1rem 2rem;
   border-radius: 8px;
-  border: 1px solid rgb(139, 93, 255);
-  background-color: rgba(139, 93, 255, 0.1);
 }
 
 nav {
@@ -27,12 +33,49 @@ ul {
   gap: 5rem;
 }
 
+ul li {
+  border-radius: 8px;
+  padding: 1px 8px 4px 8px;
+}
+
+ul li:hover {
+  cursor: pointer;
+  background-color: var(--bg-hover-color);
+}
+
+ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 .explore {
   padding-top: 0.5rem;
 }
 
-.explore button{
+button {
   margin-left: 1rem;
+  margin-bottom: 2rem;
+
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 8px;
+
+
+  padding: 1px 6px 3px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+}
+
+button.nav-btn {
+  border: none;
+  background-color: var(--bg-hover-color);
+  padding: 1px 8px 4px 8px;
+}
+
+button:hover {
+  background-color: var(--bg-hover-color);
+  transition: .4s ease;
 }
 
 @media (min-width: 1400px) {
@@ -43,6 +86,44 @@ ul {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1520px;
+    max-width: 1320px;
   }
+}
+
+textarea.area {
+  width: 40%;
+  border: none;
+  padding: .8rem;
+  border-radius: 40px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.form-control:focus {
+  outline: 0;
+  border: none;
+  color: var(--text-color);
+  box-shadow: none;
+  background-color: var(--bg-color);
+}
+
+p.word,
+p.char {
+  padding: 1px 6px 3px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+}
+
+p.preview {
+  width: 100%;
+  height: 40%;
+  max-height: 40%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: .6rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  overflow-wrap: break-word;
+  overflow-y: scroll;
 }
