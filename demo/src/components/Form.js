@@ -17,6 +17,18 @@ export default function Form(props) {
         setText(lowerText);
     }
 
+    let handleCopyClick = () => {
+        console.log('copied');
+        let text = document.getElementById('text-area');
+        text.select();
+        navigator.clipboard.writeText(text.value);
+    }
+
+    let handleExtraSpace = () => {
+        let removespace = text.split(/[ ]+/);
+        setText(removespace.join(' '))
+    }
+
     let handleClearClick = () => {
         setText('');
     }
@@ -28,10 +40,12 @@ export default function Form(props) {
                     {/* LEFT PART - DISPLAY */}
                     <div className="col-6">
                         <h5 className='text-center mt-5 text-decoration-underline'>{props.heading}</h5>
-                        <textarea className='form-control mx-auto my-5 area' rows={8} value={text} onChange={handleOnChange}></textarea>
+                        <textarea className='form-control mx-auto my-5 area' id='text-area' rows={8} value={text} onChange={handleOnChange}></textarea>
                         <div className="d-flex justify-content-center">
                             <button onClick={handleUpperCaseClick}>Upper</button>
                             <button onClick={handleLowerCaseClick}>Lower</button>
+                            <button onClick={handleCopyClick}>Copy</button>
+                            <button onClick={handleExtraSpace}>Space</button>
                             <button onClick={handleClearClick}>Clear</button>
                         </div>
                     </div>

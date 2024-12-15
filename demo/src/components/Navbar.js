@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
@@ -9,16 +10,16 @@ export default function Navbar(props) {
                 <nav className=''>
                     <ul className='d-flex list-unstyled justify-content-center'>
                         <li>
-                            <a href="/">{props.one}</a>
+                            <Link to='/'>{props.one}</Link>
                         </li>
                         <li>
-                            <a href="</" >{props.two}</a>
+                            <Link to='/theme'>{props.two}</Link>
                         </li>
                         <li>
-                            <a href="/">{props.three}</a>
+                            <Link to='/'>{props.three}</Link>
                         </li>
                         <li>
-                            <a href="/">{props.four}</a>
+                            <Link to='/'>{props.four}</Link>
                         </li>
                     </ul>
                 </nav>
