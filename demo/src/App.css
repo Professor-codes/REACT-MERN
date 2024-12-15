@@ -127,3 +127,13 @@ p.preview {
   overflow-wrap: break-word;
   overflow-y: scroll;
 }
+
+p.about-text {
+  width: 90%;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.about {
+  border-radius: 6rem 13rem 9rem 12rem / 2rem 9rem 2rem 8rem;
+}
+

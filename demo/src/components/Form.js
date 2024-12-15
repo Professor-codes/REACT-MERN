@@ -23,10 +23,8 @@ export default function Form(props) {
 
     return (
         <div>
-
             <div className="container">
                 <div className="row">
-
                     {/* LEFT PART - DISPLAY */}
                     <div className="col-6">
                         <h5 className='text-center mt-5 text-decoration-underline'>{props.heading}</h5>
@@ -37,7 +35,6 @@ export default function Form(props) {
                             <button onClick={handleClearClick}>Clear</button>
                         </div>
                     </div>
-
                     {/* RIGHT PART - DATA */}
                     <div className="col-6">
                         <div className="text-center mt-5">
@@ -54,10 +51,8 @@ export default function Form(props) {
                         <h5 className='text-center mt-5 mb-5 text-decoration-underline'>Text preview</h5>
                         <p className='preview'>{text}</p>
                     </div>
-
                 </div>
             </div>
-
         </div>
     )
 }

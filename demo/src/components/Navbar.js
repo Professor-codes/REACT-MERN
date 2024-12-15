@@ -12,7 +12,7 @@ export default function Navbar(props) {
                             <a href="/">{props.one}</a>
                         </li>
                         <li>
-                            <a href="/">{props.two}</a>
+                            <a href="</" >{props.two}</a>
                         </li>
                         <li>
                             <a href="/">{props.three}</a>
